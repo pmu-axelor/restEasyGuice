@@ -18,6 +18,7 @@ public class RestMaping {
 	@GET
 	@Path("/helo/{name}")
 	public String sayHello(@PathParam("name") String msg) {
+        System.out.printLn(msg);
 		return msg;
 	}
 	
